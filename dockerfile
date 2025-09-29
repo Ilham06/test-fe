@@ -17,7 +17,7 @@ COPY --from=builder /app/node_modules ./node_modules
 # Copy build output & public
 COPY --from=builder /app/.next ./.next
 COPY --from=builder /app/public ./public
-COPY next.config.js ./next.config.js 
+COPY next.config.ts ./next.config.ts 
 
 EXPOSE 3000
 
